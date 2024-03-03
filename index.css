@@ -27,11 +27,13 @@ h1{
     align-items: center;
 
 }
-#shop:hover{
-    color: #111112 ;
-    cursor:pointer;
 
+.head div a h1:hover {
+	color: #111112 ;
+    cursor:pointer;
+	font-weight: bold;
 }
+
 #addhabit{
     color: #9BB6AF
 }
@@ -43,10 +45,6 @@ h1{
     position:fixed;
     top: 0;
     width:100%; */
-}
-.add-delete-habits {
-    display:flex;
-    flex-direction:row;
 }
 
 .habits-nav {
