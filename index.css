@@ -52,6 +52,9 @@ h1{
 }
 
 .habits-nav div {
-	width: 100%;
-	margin: auto;
+	display:flex;
+    flex-direction:row;
+    justify-content: safe center;
+    align-items: center;
+	padding: 5px;
 }
