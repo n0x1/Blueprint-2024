@@ -196,7 +196,8 @@ const deleteHabits = () => {
 	for (let i = 0; i < habitsList.children.length; i++) {
 		if (habitsList.children[i].children[1].checked) {
 			habitsList.children[i].removeChild(habitsList.children[i].children[1])
-			delete todayHabits[habitsList.children[i].innerHTML.replaceAll("&nbsp;", "")]
+			console.log(habitsList.children[i].innerHTML.replaceAll("&nbsp;", ""))
+			delete todayHabits[habitsList.children[i].children[0].innerHTML.replaceAll("&nbsp;", "")]
 			habitsList.removeChild(habitsList.children[i]);
 			i--;
 		} else {
@@ -204,7 +205,7 @@ const deleteHabits = () => {
 		}
 	}
 
-	console.log(habitsList)
+	console.log(todayHabits)
 
 	const addTaskButton = document.getElementById("addhabitlabel").children[0].children[0]
 	const removeHabitsButton = document.getElementById("addhabitlabel").children[0].children[1]
