@@ -54,7 +54,8 @@
 .star-count {
     text-align: right;
     position:fixed;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-right:15px;
 }
 
 .your-pusheen {
