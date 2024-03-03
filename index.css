@@ -14,8 +14,11 @@ h1{
     border-radius: 10px;
     justify-content: center;
 }
+.addhabit{
+    color: #9BB6AF
+}
 
-.head {
+.navbar {
 	display: grid;
 	grid-template: 1fr / repeat(3, 1fr);
 }
