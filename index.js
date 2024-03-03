@@ -1,15 +1,15 @@
 const togglePage = (id) => {
 	if (id === "habits") {
-		document.getElementById("habits").display = "block";
-		document.getElementById("shop").display = "none";
-		document.getElementById("profile").display = "none";
+		document.getElementById("habits").style.display = "block";
+		document.getElementById("shop").style.display = "none";
+		document.getElementById("profile").style.display = "none";
 	} else if (id === "shop") {
-		document.getElementById("habits").display = "none";
-		document.getElementById("shop").display = "block";
-		document.getElementById("profile").display = "none";
+		document.getElementById("habits").style.display = "none";
+		document.getElementById("shop").style.display = "block";
+		document.getElementById("profile").style.display = "none";
 	} else {
-		document.getElementById("habits").display = "none";
-		document.getElementById("shop").display = "none";
-		document.getElementById("profile").display = "block";
+		document.getElementById("habits").style.display = "none";
+		document.getElementById("shop").style.display = "none";
+		document.getElementById("profile").style.display = "block";
 	}
 }
