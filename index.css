@@ -10,7 +10,7 @@ h1{
     color:  #697270;
     font-weight: 600;
     font-size: 2rem;
-    border-radius: 10px;
+    border-collapse:collapse;
     justify-content: center;
     background-color:#ede3e4ff;
 }
