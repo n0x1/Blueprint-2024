@@ -5,13 +5,13 @@ const accessoriesPrice = {
 	"Plant": 5,
 	"Cake": 5,
 	"Camera": 5,
-	"Glasses": 10,
-	"PartyHat": 10,
-	"IceCream": 10,
+	"Glasses": 7,
+	"PartyHat": 7,
+	"IceCream": 7,
 	"BandAid": 2,
 	"Hat": 2,
-	"Butterfly": 7,
-	"Computer": 10,
+	"Butterfly": 3,
+	"Computer": 7,
 	"Pen": 3,
 	"Strawberry": 3
 }
