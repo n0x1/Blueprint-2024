@@ -4,3 +4,12 @@
 --paynes-gray: #4a6d7cff;
 --magnolia: #e7dfe8ff;
 --outer-space: #475657ff; */
+
+h1 {
+    display: flex;
+    color:  lightblue;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 10px;
+    justify-content: center;
+}
