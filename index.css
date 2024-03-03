@@ -7,6 +7,8 @@
 
 * {
 	font-family: "Concert One", sans-serif;
+	margin: auto;
+	width: 100%;
 }
 
 h1{
@@ -21,10 +23,6 @@ h1{
     font-style: normal;
     background-color:#ede3e4ff;
     margin-top:-3px;
-    display:flex;
-    flex-direction:row;
-    justify-content: safe center;
-    align-items: center;
 
 }
 
@@ -46,14 +44,14 @@ h1{
 	display: grid;
 	grid-template: 1fr / repeat(2, 1fr);
 	background-color: #ede3e4ff;
+	text-align: center;
 }
 
-/* .habits-list {
-	display:flex;
-    flex-direction:row;
-    justify-content: safe center;
-    align-items: center;
-} */
+.habits-list p {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
 
 .habits-nav div {
 	display:flex;

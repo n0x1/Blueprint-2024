@@ -17,10 +17,10 @@ const togglePage = (id) => {
 const toggleHabits = (id) => {
 	if (id === "today") {
 		document.getElementById("this-week").style.display = "none";
-		document.getElementById("today").style.display = "flex";
+		document.getElementById("today").style.display = "block";
 		loadHabits("today");
 	} else {
-		document.getElementById("this-week").style.display = "flex";
+		document.getElementById("this-week").style.display = "block";
 		document.getElementById("today").style.display = "none";
 	}
 }
@@ -44,7 +44,7 @@ const loadHabits = (id) => {
 		const todaySection = document.getElementById("today");
 		for (const [key, value] of Object.entries(todayHabits)) {
 			console.log(key)
-			const habit = document.createElement("li");
+			const habit = document.createElement("p");
 			habit.innerHTML = key;
 			todaySection.appendChild(habit);
 		}
