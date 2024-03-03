@@ -52,8 +52,13 @@ const loadHabits = (id) => {
 			if (!value) habit.style['text-decoration'] = 'line-through';
 			habit.style.color = "black";
 			// set onclick ot previewStrikethrough
-			wrapper.classList.add("habit")
+			wrapper.classList.add("habit");
+			wrapper.onclick = () => completeHabit(true, habit);
 			todaySection.appendChild(wrapper);
 		}
 	}
+}
+
+const completeHabit = (today, habit) => {
+	habit.style['text-decoration'] = 'line-through';
 }
