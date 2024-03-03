@@ -26,6 +26,14 @@
 	padding: 5px;
 }
 
+body section {
+	display: none;
+}
+
+#starting {
+	display: block;
+}
+
 .head div a h1:hover {
 	color: #111112 ;
     cursor:pointer;

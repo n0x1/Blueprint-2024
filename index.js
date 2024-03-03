@@ -13,6 +13,7 @@ const togglePage = (id) => {
 		document.getElementById("shop").style.display = "none";
 		document.getElementById("profile").style.display = "block";
 	}
+	document.getElementById("starting").style.display = "none";
 }
 
 const toggleHabits = (id) => {
