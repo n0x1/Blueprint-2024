@@ -71,5 +71,6 @@ const toggleHabit = (habit) => {
 
 const starCount = 0;
 const updateStarCount = () => {
-	document.getElementById("star-count").getChildren[0].innerHTML = "your stars: " + starCount;
+	console.log('hi')
+	document.getElementById("star-count").children[0].innerHTML = "your stars: " + starCount;
 }

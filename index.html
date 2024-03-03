@@ -15,17 +15,18 @@
     </div>
 </head>
 
-<div class="star-count">
-    <p> stars: ${starcount}:</p>
-</div>
-<br>
-<div id="description" >
-    <i>Earn stars by completing tasks and use these stars to purchase accessories for your Pusheen!</i>
-</div>
+<body onload="updateStarCount()">
+    <div id="star-count">
+        <p></p>
+    </div>
+    <br>
+    <div id="description" >
+        <i>Earn stars by completing tasks and use these stars to purchase accessories for your Pusheen!</i>
+    </div>
 
-<body>
     <section id="starting">
         <!--starcount is always visisble-->
+        <!--insert pusheen image here-->
     </section>
     <section id="habits">
         <p>my habits:</p>
@@ -42,9 +43,6 @@
             your pusheen!
         </div>
     </section>
-    <div id="star-count" onload="updateStarCount()">
-        <p>hi</p>
-    </div>
 </body>
 
 </html>
