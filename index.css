@@ -51,6 +51,13 @@ h1{
 	background-color: #ede3e4ff;
 }
 
+.habits-list {
+	display:flex;
+    flex-direction:row;
+    justify-content: safe center;
+    align-items: center;
+}
+
 .habits-nav div {
 	display:flex;
     flex-direction:row;
