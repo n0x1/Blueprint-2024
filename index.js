@@ -120,23 +120,32 @@ async function purchase(name) {
 	}
 }
 
+const equip = (name) => {
+	const profileSection = document.getElementById("profile");
+	profileSection.children[0].children[1].remove();
+	currentlyEmployed = name;
+	const cat = document.createElement('img')
+	cat.src = currentlyEmployed + "Cat.jpg";
+	cat.width = 400;
+	document.getElementById("your-pusheen").appendChild(cat);
+}
+
 const loadProfile = () => {
 	const profileSection = document.getElementById("profile");
 	profileSection.children[0].children[1].remove();
 	while (profileSection.children[1].firstChild) // clear the section
 		profileSection.children[1].removeChild(profileSection.children[1].lastChild);
-	
 
 	const cat = document.createElement("img");
 	cat.src = currentlyEmployed + "Cat.jpg";
 	cat.width = 400;
 	document.getElementById("your-pusheen").appendChild(cat);
-	console.log(myAccessories);
 
 	for (let i = 0; i < myAccessories.length; i++) {
-		accessory = myAccessories[i];
+		let accessory = myAccessories[i];
 		const accessoryEl = document.createElement("img");
 		accessoryEl.src = accessory + ".jpg";
+		accessoryEl.onclick = () => { equip(accessory) };
 		document.getElementById("my-accessories").appendChild(accessoryEl);
 	}
 }
