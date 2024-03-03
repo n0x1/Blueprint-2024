@@ -98,8 +98,20 @@ const addHabit = () => {
 	})
 }
 
-const purchase = (name) => {
+const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+
+async function purchase(name) {
 	if (starCount > accessoriesPrice[name]) {
-		
+		starCount -= accessoriesPrice[name];
+		updateStarCount();
+		myAccessories.push(name);
+	} else {
+		const countEl = document.getElementById("star-count")
+		for (let i = 0; i < 3; i++) {
+			await sleep(300)
+			countEl.style.color = "red";
+			await sleep(300)
+			countEl.style.color = "#475657ff"
+		}
 	}
 }
