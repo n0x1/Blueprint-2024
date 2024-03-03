@@ -140,6 +140,11 @@ const loadProfile = () => {
 	cat.src = currentlyEmployed + "Cat.jpg";
 	cat.width = 400;
 	document.getElementById("your-pusheen").appendChild(cat);
+	
+	const text = document.createElement("p");
+	text.innerHTML = "your accessories:";
+	text.style['font-size'] = '1.5rem';
+	document.getElementById("your-pusheen").appendChild(text);
 
 	for (let i = 0; i < myAccessories.length; i++) {
 		let accessory = myAccessories[i];
