@@ -25,7 +25,7 @@ const toggleHabits = (id) => {
 	}
 }
 
-let todayHabits = {
+let todayHabits = { // where the value is whether or not the habit is completed
 	"sleep": true,
 	"drink water": false
 };
@@ -43,22 +43,33 @@ const loadHabits = (id) => {
 	if (id === "today") {
 		const todaySection = document.getElementById("today");
 		for (const [key, value] of Object.entries(todayHabits)) {
-			console.log(key)
 			const wrapper = document.createElement("p");
 			wrapper.appendChild(document.createElement("span"))
 			const habit = wrapper.children[0];
 			habit.innerHTML = "&nbsp;" + key + "&nbsp;";
 			wrapper.style.color = "#4a6d7cff";
-			if (!value) habit.style['text-decoration'] = 'line-through';
+			if (value) habit.style['text-decoration'] = 'line-through';
 			habit.style.color = "black";
 			// set onclick ot previewStrikethrough
 			wrapper.classList.add("habit");
-			wrapper.onclick = () => completeHabit(true, habit);
+			wrapper.onclick = () => toggleHabit(true, habit);
 			todaySection.appendChild(wrapper);
 		}
 	}
 }
 
-const completeHabit = (today, habit) => {
-	habit.style['text-decoration'] = 'line-through';
+const toggleHabit = (today, habit) => {
+	if (today) {
+		const habitText = habit.innerHTML.replaceAll("&nbsp;", "")
+		if (todayHabits[habitText]) { // if completed is true
+			habit.style['text-decoration'] = 'none';
+			todayHabits[habitText] = false;
+			console.log('hi');
+		} else {
+			habit.style['text-decoration'] = 'line-through'
+			todayHabits[habitText] = true;
+		}
+	} else {
+
+	}
 }
