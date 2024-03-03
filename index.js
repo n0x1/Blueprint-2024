@@ -116,3 +116,8 @@ async function purchase(name) {
 		}
 	}
 }
+
+
+const petMovement = () => {
+	HTMLImageElement.pusheen.classList.add("animate__animated animate__bounce animate__repeat-2")
+}
