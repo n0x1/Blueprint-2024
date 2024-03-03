@@ -52,13 +52,13 @@
 }
 
 .star-count {
-    justify-content: right;
+    text-align: right;
     position:fixed;
     margin-top: 20px
 }
 
 .your-pusheen {
-    justify-content: center;
+    text-align: center;
     font-size: 1.5rem;
 }
 
