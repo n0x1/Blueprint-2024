@@ -204,6 +204,8 @@ const deleteHabits = () => {
 		}
 	}
 
+	console.log(habitsList)
+
 	const addTaskButton = document.getElementById("addhabitlabel").children[0].children[0]
 	const removeHabitsButton = document.getElementById("addhabitlabel").children[0].children[1]
 	const deleteHabitsButton = document.getElementById("addhabitlabel").children[0].children[2]
