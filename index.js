@@ -119,6 +119,8 @@ async function purchase(name) {
 		starCount -= accessoriesPrice[name];
 		updateStarCount();
 		myAccessories.push(name);
+		const cash = new Audio('cash.mp3');
+		cash.play();
 	} else {
 		const countEl = document.getElementById("star-count")
 		for (let i = 0; i < 3; i++) {
