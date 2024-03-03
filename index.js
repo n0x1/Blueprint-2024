@@ -69,5 +69,9 @@ const updateStarCount = () => {
 }
 
 const addHabit = () => {
-	
+	// create an input
+	const inputBox = document.createElement("input");
+	inputBox.placeholder = "new habit..."
+	document.getElementById("today").appendChild(inputBox);
+	// check for enter and create new habit
 }
