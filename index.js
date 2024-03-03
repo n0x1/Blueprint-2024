@@ -12,6 +12,8 @@ const accessoriesPrice = {
 	"Hat": 2
 }
 
+let currentlyEmployed = "";
+
 const togglePage = (id) => {
 	if (id === "habits") {
 		document.getElementById("habits").style.display = "block";
@@ -26,6 +28,7 @@ const togglePage = (id) => {
 		document.getElementById("habits").style.display = "none";
 		document.getElementById("shop").style.display = "none";
 		document.getElementById("profile").style.display = "block";
+		loadProfile();
 	}
 	document.getElementById("starting").style.display = "none";
 }
@@ -114,5 +117,24 @@ async function purchase(name) {
 			await sleep(300)
 			countEl.style.color = "#475657ff"
 		}
+	}
+}
+
+const loadProfile = () => {
+	const profileSection = document.getElementById("profile");
+	while (profileSection.firstChild) // clear the section
+		profileSection.removeChild(profileSection.lastChild);
+
+	const cat = document.createElement("img");
+	cat.src = currentlyEmployed + "Cat.jpg";
+	cat.width = 400;
+	document.getElementById("your-pusheen").appendChild(cat);
+	console.log(myAccessories);
+
+	for (let i = 0; i < myAccessories.length; i++) {
+		accessory = myAccessories[i];
+		const accessoryEl = document.createElement("img");
+		accessoryEl.src = accessory + ".jpg";
+		document.getElementById("my-accessories").appendChild(accessoryEl);
 	}
 }
