@@ -104,3 +104,7 @@ body {
 #starting {
     text-align:center;
 }
+
+input {
+	width: 50%;
+}

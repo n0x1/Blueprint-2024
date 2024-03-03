@@ -1,3 +1,5 @@
+let starCount = 0;
+
 const togglePage = (id) => {
 	if (id === "habits") {
 		document.getElementById("habits").style.display = "block";
@@ -27,7 +29,6 @@ const loadHabits = () => {
 		noHabits.innerHTML = "No habits yet...";
 		noHabits.style['text-align'] = 'center';
 		todaySection.appendChild(noHabits);
-		console.log('hi')
 		return;
 	}
 
@@ -59,12 +60,12 @@ const toggleHabit = (habit) => {
 		todayHabits[habitText] = true;
 		const audio = new Audio('bell.wav');
 		audio.play();
+		starCount++;
+		updateStarCount();
 	}
 }
 
-const starCount = 0;
 const updateStarCount = () => {
-	console.log('hi')
 	document.getElementById("star-count").children[0].innerHTML = "your stars: " + starCount;
 }
 
