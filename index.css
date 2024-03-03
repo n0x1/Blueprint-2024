@@ -52,6 +52,13 @@
 	text-decoration: line-through;
 }
 
-body section {
-	display: none;
+.star-count {
+    position:fixed;
+    justify-content: right;
+    margin-top: 20px
+}
+
+.your-pusheen {
+    justify-content: center;
+    font-size: 1.5rem;
 }
