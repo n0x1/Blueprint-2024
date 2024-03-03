@@ -76,7 +76,11 @@ const addHabit = () => {
 	// check for enter and create new habit
 	inputBox.addEventListener("keyup", (event) => {
 		if (event.key == "Enter") {
-			text = inputBox.innerHTML;
+			text = inputBox.value;
+			console.log(text);
+			document.getElementById("today").lastChild.remove();
+			todayHabits[text] = false;
+			loadHabits();
 		}
 	})
 }
