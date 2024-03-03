@@ -5,7 +5,7 @@
 --magnolia: #e7dfe8ff;
 --outer-space: #475657ff; */
 
-h1 {
+#head{
     display: flex;
     color:  #697270;
     font-weight: 600;
