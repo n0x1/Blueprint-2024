@@ -200,7 +200,7 @@ const deleteHabits = () => {
 			habitsList.removeChild(habitsList.children[i]);
 			i--;
 		} else {
-			habitsList.children[i].removeChild(habitsList.children.children[1])
+			habitsList.children[i].removeChild(habitsList.children[i].children[1])
 		}
 	}
 
