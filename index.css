@@ -27,7 +27,7 @@ h1{
     align-items: center;
 
 }
-.shop:hover{
+#shop:hover{
     background-color: #d5cce5 ;
 
 }
