@@ -66,6 +66,14 @@ body section {
     margin-right:15px;
 }
 
+#description{
+    display: flex;
+    background-color: #ebdae6;
+    border-radius: 10px;
+    justify-content: center;
+    color: #697270
+}
+
 .your-pusheen {
     text-align: center;
     font-size: 1.5rem;
