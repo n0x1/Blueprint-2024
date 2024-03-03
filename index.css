@@ -87,3 +87,8 @@ body section {
     text-align:center;
     font-size: 2.0rem;
 }
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
