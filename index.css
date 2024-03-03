@@ -7,14 +7,17 @@
 
 h1{
     display: flex;
-    color:  #697270;
+    color:  #62929eff;
     font-weight: 600;
     font-size: 2rem;
     border-radius: 10px;
     justify-content: center;
 }
+.habit1{
+    color: #7D9E9E;
+}
 #addhabit{
-    color: #9BB6AF
+    color: #e7dfe8ff;
 }
 
 .head {
