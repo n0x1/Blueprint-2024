@@ -43,7 +43,7 @@ body section {
     width:100%; */
 }
 
-.habits-list p {
+#today p {
 	width: 100%;
 	text-align: center;
 }
@@ -126,7 +126,7 @@ input {
 }
 
 
-#addhabitlabel:hover {
+#addhabitlabel p span:hover {
     color: #111112;
     cursor:pointer;
 }

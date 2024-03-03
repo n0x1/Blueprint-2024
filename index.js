@@ -64,7 +64,7 @@ const loadHabits = () => {
 		habit.style.color = "black";
 		// set onclick ot previewStrikethrough
 		wrapper.classList.add("habit");
-		wrapper.onclick = () => toggleHabit(habit);
+		habit.onclick = () => toggleHabit(habit);
 		todaySection.appendChild(wrapper);
 	}
 }
@@ -174,5 +174,38 @@ const petMovement = () => {
 }
 
 const removeHabits = () => {
-	
+	const habitsList = document.getElementById("today");
+	for (let i = 0; i < habitsList.children.length; i++) {
+		const checkbox = document.createElement("input");
+		checkbox.type = "checkbox";
+		habitsList.children[i].appendChild(checkbox);
+	}
+
+	const addTaskButton = document.getElementById("addhabitlabel").children[0].children[0]
+	addTaskButton.style.display = "none";
+	const removeHabitsButton = document.getElementById("addhabitlabel").children[0].children[1]
+	removeHabitsButton.style.display = "none";
+	const deleteHabitsButton = document.getElementById("addhabitlabel").children[0].children[2]
+	deleteHabitsButton.style.display = "inline-block";
+}
+
+const deleteHabits = () => {
+	const habitsList = document.getElementById("today");
+	for (let i = 0; i < habitsList.children.length; i++) {
+		if (habitsList.children[i].children[1].checked) {
+			habitsList.children[i].removeChild(habitsList.children[i].children[1])
+			delete todayHabits[habitsList.children[i].innerHTML.replaceAll("&nbsp;", "")]
+			habitsList.removeChild(habitsList.children[i]);
+			i--;
+		} else {
+			habitsList.children[i].removeChild(habitsList.children.children[1])
+		}
+	}
+
+	const addTaskButton = document.getElementById("addhabitlabel").children[0].children[0]
+	const removeHabitsButton = document.getElementById("addhabitlabel").children[0].children[1]
+	const deleteHabitsButton = document.getElementById("addhabitlabel").children[0].children[2]
+	addTaskButton.style.display = "inline-block";
+	removeHabitsButton.style.display = "inline-block";
+	deleteHabitsButton.style.display = "none";
 }
