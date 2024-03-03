@@ -43,3 +43,14 @@ h1{
     top: 0;
     width:100%; */
 }
+
+.habits-nav {
+	display: grid;
+	grid-template: 1fr / repeat(2, 1fr);
+	background-color: #ede3e4ff;
+}
+
+.habits-nav div {
+	width: 100%;
+	margin: auto;
+}
