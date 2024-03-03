@@ -29,6 +29,7 @@ h1{
 }
 #shop:hover{
     background-color: #d5cce5 ;
+    cursor: pointer;
 
 }
 #addhabit{
