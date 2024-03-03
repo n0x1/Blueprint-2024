@@ -70,6 +70,8 @@ const toggleHabit = (habit) => {
 	if (todayHabits[habitText]) { // if completed is true
 		habit.style['text-decoration'] = 'none';
 		todayHabits[habitText] = false;
+		starCount--;
+		updateStarCount();
 	} else {
 		habit.style['text-decoration'] = 'line-through'
 		todayHabits[habitText] = true;
