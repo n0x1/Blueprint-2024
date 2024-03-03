@@ -16,13 +16,6 @@ const togglePage = (id) => {
 	document.getElementById("starting").style.display = "none";
 }
 
-const toggleHabits = (id) => {
-	if (id === "today") {
-		document.getElementById("today").style.display = "block";
-		loadHabits();
-	}
-}
-
 let todayHabits = { // where the value is whether or not the habit is completed
 };
 
@@ -75,6 +68,6 @@ const updateStarCount = () => {
 	document.getElementById("star-count").children[0].innerHTML = "your stars: " + starCount;
 }
 
-const addHabit() {
+const addHabit = () => {
 	
 }
