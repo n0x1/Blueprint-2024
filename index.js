@@ -99,7 +99,6 @@ const addHabit = () => {
 	inputBox.addEventListener("keyup", (event) => {
 		if (event.key == "Enter") {
 			text = inputBox.value;
-			console.log(text);
 			document.getElementById("today").lastChild.remove();
 			todayHabits[text] = false;
 			loadHabits();
@@ -196,7 +195,6 @@ const deleteHabits = () => {
 	for (let i = 0; i < habitsList.children.length; i++) {
 		if (habitsList.children[i].children[1].checked) {
 			habitsList.children[i].removeChild(habitsList.children[i].children[1])
-			console.log(habitsList.children[i].innerHTML.replaceAll("&nbsp;", ""))
 			delete todayHabits[habitsList.children[i].children[0].innerHTML.replaceAll("&nbsp;", "")]
 			habitsList.removeChild(habitsList.children[i]);
 			i--;
@@ -204,8 +202,6 @@ const deleteHabits = () => {
 			habitsList.children[i].removeChild(habitsList.children[i].children[1])
 		}
 	}
-
-	console.log(todayHabits)
 
 	const addTaskButton = document.getElementById("addhabitlabel").children[0].children[0]
 	const removeHabitsButton = document.getElementById("addhabitlabel").children[0].children[1]
