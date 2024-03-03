@@ -8,13 +8,21 @@
 h1{
     display: flex;
     color:  #697270;
-    font-weight: 600;
-    font-size: 2rem;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     border-radius: 10px;
     justify-content: center;
 }
+.addhabit{
+    color: #9BB6AF
+}
 
-.head {
+.navbar {
 	display: grid;
 	grid-template: 1fr / repeat(3, 1fr);
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    width:100%;
 }
