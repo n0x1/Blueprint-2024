@@ -17,6 +17,7 @@
     font-weight: 400;
     font-style: normal;
     background-color:#ede3e4ff;
+    border-radius: 10px;
     /* margin-top:-3px; */
 }
 
@@ -63,7 +64,8 @@ body section {
     font-size: 1.2rem;
     align-content:stretch;
     justify-content: center;
-    color: #697270  
+    color: #697270; 
+    border-radius: 10px;
 }
 
 #habits {
