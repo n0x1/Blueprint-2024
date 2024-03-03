@@ -13,6 +13,9 @@ h1{
     border-radius: 10px;
     justify-content: center;
 }
+#addhabit{
+    color: #9BB6AF
+}
 
 .head {
 	display: grid;
