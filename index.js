@@ -1,5 +1,16 @@
 let starCount = 0;
 let myAccessories = [];
+const accessoriesPrice = {
+	"Basketball": 2,
+	"Plant": 5,
+	"Cake": 5,
+	"Camera": 5,
+	"Glasses": 10,
+	"PartyHat": 10,
+	"IceCream": 10,
+	"BandAid": 2,
+	"Hat": 2
+}
 
 const togglePage = (id) => {
 	if (id === "habits") {
@@ -85,4 +96,10 @@ const addHabit = () => {
 			loadHabits();
 		}
 	})
+}
+
+const purchase = (name) => {
+	if (starCount > accessoriesPrice[name]) {
+		
+	}
 }
