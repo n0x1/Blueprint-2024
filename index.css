@@ -101,7 +101,6 @@ body {
     text-align:center;
 }
 
-input {
-	padding: 5px;
-	width: 50%;
+#starting {
+    text-align:center;
 }
