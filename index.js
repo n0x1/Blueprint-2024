@@ -1,4 +1,5 @@
 let starCount = 0;
+let myAccessories = [];
 
 const togglePage = (id) => {
 	if (id === "habits") {
