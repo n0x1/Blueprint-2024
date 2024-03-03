@@ -74,3 +74,7 @@ const updateStarCount = () => {
 	console.log('hi')
 	document.getElementById("star-count").children[0].innerHTML = "your stars: " + starCount;
 }
+
+const addHabit() {
+	
+}
