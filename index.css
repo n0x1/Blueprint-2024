@@ -97,7 +97,7 @@ body {
 	width: 50%;
 }
 
-#accessories div:hover {
+#accessories div:hover, #my-accessories img:hover {
 	border: 2px dotted #62929eff;
 }
 
@@ -121,7 +121,16 @@ input {
 }
 
 
-#addhabitlabel:hover() {
+#addhabitlabel:hover {
     color: #111112;
     cursor:pointer;
+}
+
+#my-accessories {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+#my-accessories img {
+	width: 50%;
 }
