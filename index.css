@@ -85,3 +85,8 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+#accessories {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(4, 1fr)
+}
