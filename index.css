@@ -93,8 +93,12 @@ body {
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
-#accessories img {
+#accessories div img {
 	width: 50%;
+}
+
+#accessories div:hover {
+	border: 2px dotted #62929eff;
 }
 
 #shoptitle {
