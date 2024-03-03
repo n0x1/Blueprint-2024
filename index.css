@@ -61,6 +61,9 @@ body section {
 }
 
 .star-count {
+    text-align: left;
+    position:fixed;
+    margin-left:20%;
     text-align: right;
 }
 
@@ -71,4 +74,11 @@ body section {
 
 #habits {
     justify-content: center;
+}
+
+#description {
+    margin-top:-20px;
+}
+#description {
+    margin-top:-20px;
 }
