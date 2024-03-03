@@ -18,6 +18,10 @@ h1{
     justify-content: center;
 
 }
+.shop:hover{
+    background-color: #d5cce5 ;
+
+}
 .addhabit{
     color: #9BB6AF
 }
