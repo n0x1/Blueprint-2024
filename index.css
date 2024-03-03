@@ -93,7 +93,7 @@ body {
 }
 
 #accessories img {
-	border: solid red 1px;
+	width: 50%;
 }
 
 #shoptitle {
