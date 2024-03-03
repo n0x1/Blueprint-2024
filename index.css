@@ -10,6 +10,7 @@
 }
 
 h1{
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: safe center;
@@ -18,9 +19,12 @@ h1{
     font-family: "Concert One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    border-collapse:collapse;
     background-color:#ede3e4ff;
     margin-top:-3px;
+    display:flex;
+    flex-direction:row;
+    justify-content: safe center;
+    align-items: center;
 
 }
 .shop:hover{
