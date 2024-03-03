@@ -17,9 +17,9 @@ const togglePage = (id) => {
 const toggleHabits = (id) => {
 	if (id === "today") {
 		document.getElementById("this-week").style.display = "none";
-		document.getElementById("today").style.display = "block";
+		document.getElementById("today").style.display = "flex";
 	} else {
-		document.getElementById("this-week").style.display = "block";
+		document.getElementById("this-week").style.display = "flex";
 		document.getElementById("today").style.display = "none";
 	}
 }
