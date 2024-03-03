@@ -134,3 +134,9 @@ input {
 #my-accessories img {
 	width: 50%;
 }
+
+
+#welcomehuman {
+    font-size:1.2rem;
+    text-shadow: #697270;
+}
