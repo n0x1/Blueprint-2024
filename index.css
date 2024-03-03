@@ -7,14 +7,9 @@
 
 * {
 	font-family: "Concert One", sans-serif;
-	margin: auto;
 	width: 100%;
-	padding: 5px;
 }
 
-html {
-	padding: 10px;
-}
 
 .head div a h1 {
     text-align: center;
@@ -24,7 +19,6 @@ html {
     font-style: normal;
     background-color:#ede3e4ff;
     /* margin-top:-3px; */
-	padding: 5px;
 }
 
 body section {
@@ -52,8 +46,6 @@ body section {
 .habits-list p {
 	width: 100%;
 	text-align: center;
-	margin: auto;
-	padding: 5px;
 }
 
 .habit:hover {
@@ -62,13 +54,13 @@ body section {
 
 #star-count {
     text-align: left;
-    font-size:1.0rem;
+    font-size:1.5rem;
 }
 
 #description{
-    /* display: flex; */
+    display: flex;
     background-color: rgb(248, 239, 240);
-    border-radius: 10px;
+    align-content:stretch;
     justify-content: center;
     color: #697270
 }
@@ -77,8 +69,17 @@ body section {
     text-align: center;
 }
 
+#my-habit-listtitle {
+    text-align:center;
+    font-size:2.0rem;
+}
+
 #shop {
     text-align:center;
+}
+#profile {
+    text-align: center;
+    font-size:2.0rem;
 }
 
 body {
@@ -86,7 +87,13 @@ body {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 #accessories {
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(4, 1fr)
+=======
+#shoptitle {
+    font-size:2.0rem;
+    text-align:center;
+>>>>>>> 576e95198421e4bf277956d87561ca4e9b4307b6
 }
