@@ -60,13 +60,14 @@ body section {
 }
 
 .star-count {
-    justify-content: right;
+    text-align: right;
     position:fixed;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-right:15px;
 }
 
 .your-pusheen {
-    justify-content: center;
+    text-align: center;
     font-size: 1.5rem;
 }
 
