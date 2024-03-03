@@ -15,6 +15,7 @@ h1{
     border-collapse:collapse;
     background-color:#ede3e4ff;
     margin-top:-3px;
+    justify-content: center;
 
 }
 .addhabit{
