@@ -45,7 +45,7 @@ const loadHabits = () => {
 
 	if (todayHabits.length === 0) {
 		const noHabits = document.createElement("p");
-		noHabits.innerHTML = "No habits yet...";
+		noHabits.innerHTML = "No tasks yet...";
 		noHabits.style['text-align'] = 'center';
 		todaySection.appendChild(noHabits);
 		return;
@@ -93,7 +93,7 @@ const updateStarCount = () => {
 const addHabit = () => {
 	// create an input
 	const inputBox = document.createElement("input");
-	inputBox.placeholder = "input habit here and press enter to submit"
+	inputBox.placeholder = "input task here and press enter to submit"
 	document.getElementById("today").appendChild(inputBox);
 	// check for enter and create new habit
 	inputBox.addEventListener("keyup", (event) => {
