@@ -9,7 +9,11 @@ const accessoriesPrice = {
 	"PartyHat": 10,
 	"IceCream": 10,
 	"BandAid": 2,
-	"Hat": 2
+	"Hat": 2,
+	"Butterfly": 7,
+	"Computer": 10,
+	"Pen": 3,
+	"Strawberry": 3
 }
 
 let currentlyEmployed = "";
