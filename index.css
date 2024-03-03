@@ -117,4 +117,11 @@ input {
 #addhabitlabel {
     background-color: #e7dfe8ff;
     font-size:1.2rem; 
+    color:#697270;
+}
+
+
+#addhabitlabel:hover() {
+    color: #111112;
+
 }
