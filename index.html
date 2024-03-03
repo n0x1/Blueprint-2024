@@ -8,26 +8,44 @@
 
 <head>
     <div class="head">
-        <a onclick="togglePage('habits')"><h1>habits</h1></a>
-        <a onclick="togglePage('shop')"><h1>shop</h1></a>
-        <a onclick="togglePage('profile')"><h1>profile</h1></a>
+        <div><a onclick="togglePage('habits')"><h1>habits</h1></a></div>
+        <div><a onclick="togglePage('shop')"><h1>shop</h1></a></div>
+        <div><a onclick="togglePage('profile')"><h1>profile</h1></a></div>
     </div>
 </head>
 <body>
     <section id="habits">
-        <div class="checkbox">
-            <input type="text" id="habit1" placeholder="your habit here"><input type="checkbox" id="check1" value="checked"><br>
-            <input type="text" id="habit2" placeholder="your habit here"><input type="checkbox" id="check2" value="checked"><br>
+        <div class="habits-nav">
+            <a onclick="toggleHabits('today')">today</a>
+            <a onclick="toggleHabits('this-week')">this week</a>
         </div>
-        <div class="addhabit">
-            <button>+</button>
+
+        <div id="today">
+            <div class="checkbox">
+                <input type="text" id="habit1" placeholder="your habit here"><input type="checkbox" id="check1" value="checked"><br>
+                <input type="text" id="habit2" placeholder="your habit here"><input type="checkbox" id="check2" value="checked"><br>
+            </div>
+            <div class="addhabit">
+                <button>+</button>
+            </div>
+            <div class="deletehabit">
+                <button>-</button>
+            </div>
         </div>
-        <div class="deletehabit">
-            <button>-</button>
+        <div id="this-week">
+            <div class="checkbox">
+                <input type="text" id="habit1" placeholder="your habit here"><input type="checkbox" id="check1" value="checked"><br>
+                <input type="text" id="habit2" placeholder="your habit here"><input type="checkbox" id="check2" value="checked"><br>
+            </div>
+            <div class="addhabit">
+                <button>+</button>
+            </div>
+            <div class="deletehabit">
+                <button>-</button>
+            </div>
         </div>
     </section>
     <section id="shop">
-
     </section>
     <section id="profile">
 

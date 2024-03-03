@@ -13,3 +13,13 @@ const togglePage = (id) => {
 		document.getElementById("profile").style.display = "block";
 	}
 }
+
+const toggleHabits = (id) => {
+	if (id === "today") {
+		document.getElementById("this-week").style.display = "none";
+		document.getElementById("today").style.display = "block";
+	} else {
+		document.getElementById("this-week").style.display = "block";
+		document.getElementById("today").style.display = "none";
+	}
+}
