@@ -42,9 +42,6 @@ let thisWeekHabits = {
 const loadHabits = (id) => {
 	if (id === "today") {
 		const todaySection = document.getElementById("today");
-		while (todaySection.firstChild) // clear the section
-			todaySection.removeChild(todaySection.lastChild);
-
 		for (const [key, value] of Object.entries(todayHabits)) {
 			const wrapper = document.createElement("p");
 			wrapper.appendChild(document.createElement("span"))
@@ -53,7 +50,7 @@ const loadHabits = (id) => {
 			wrapper.style.color = "#4a6d7cff";
 			if (value) habit.style['text-decoration'] = 'line-through';
 			habit.style.color = "black";
-			// set onclick ot previewStrikethrough
+			// set onclick to previewStrikethrough
 			wrapper.classList.add("habit");
 			wrapper.onclick = () => toggleHabit(true, habit);
 			todaySection.appendChild(wrapper);
@@ -67,9 +64,12 @@ const toggleHabit = (today, habit) => {
 		if (todayHabits[habitText]) { // if completed is true
 			habit.style['text-decoration'] = 'none';
 			todayHabits[habitText] = false;
+			console.log('hi');
 		} else {
 			habit.style['text-decoration'] = 'line-through'
 			todayHabits[habitText] = true;
+			const audio = new Audio('bell.wav');
+			audio.play();
 		}
 	} else {
 
