@@ -121,30 +121,34 @@ async function purchase(name) {
 }
 
 const equip = (name) => {
-	const profileSection = document.getElementById("profile");
-	profileSection.children[0].children[1].remove();
 	currentlyEmployed = name;
-	const cat = document.createElement('img')
-	cat.src = currentlyEmployed + "Cat.jpg";
-	cat.width = 400;
-	document.getElementById("your-pusheen").appendChild(cat);
+	loadProfile();
 }
 
 const loadProfile = () => {
 	const profileSection = document.getElementById("profile");
-	profileSection.children[0].children[1].remove();
-	while (profileSection.children[1].firstChild) // clear the section
-		profileSection.children[1].removeChild(profileSection.children[1].lastChild);
+	while (profileSection.firstChild)
+		profileSection.removeChild(profileSection.lastChild);
+
+	const yourPusheen = document.createElement("div");
+	yourPusheen.id = "your-pusheen";
+
+	const text = document.createElement("p");
+	text.innerHTML = "your accessories:";
+	text.style['font-size'] = '1.5rem';
+	yourPusheen.appendChild(text);
 
 	const cat = document.createElement("img");
 	cat.src = currentlyEmployed + "Cat.jpg";
 	cat.width = 400;
-	document.getElementById("your-pusheen").appendChild(cat);
-	
-	const text = document.createElement("p");
-	text.innerHTML = "your accessories:";
-	text.style['font-size'] = '1.5rem';
-	document.getElementById("your-pusheen").appendChild(text);
+	yourPusheen.appendChild(cat);
+
+	profileSection.appendChild(yourPusheen)
+
+	const accessories = document.createElement("div");
+	accessories.id = "my-accessories";
+
+	profileSection.appendChild(accessories)
 
 	for (let i = 0; i < myAccessories.length; i++) {
 		let accessory = myAccessories[i];
