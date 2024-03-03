@@ -23,12 +23,20 @@ const toggleHabits = (id) => {
 }
 
 let todayHabits = { // where the value is whether or not the habit is completed
-	"sleep": true,
-	"drink water": false
 };
 
 const loadHabits = () => {
 	const todaySection = document.getElementById("today");
+
+	if (todayHabits.length === 0) {
+		const noHabits = document.createElement("p");
+		noHabits.innerHTML = "No habits yet...";
+		noHabits.style['text-align'] = 'center';
+		todaySection.appendChild(noHabits);
+		console.log('hi')
+		return;
+	}
+
 	while (todaySection.firstChild) // clear the section
 		todaySection.removeChild(todaySection.lastChild);
 
