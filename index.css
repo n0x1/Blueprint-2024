@@ -62,7 +62,7 @@ body section {
 
 #star-count {
     text-align: left;
-    font-size:1.5rem;
+    font-size:1.0rem;
 }
 
 #description{
@@ -73,17 +73,10 @@ body section {
     color: #697270
 }
 
-.your-pusheen {
-    text-align: center;
-    font-size: 2.0rem;
-}
-
 #habits {
     text-align: center;
-    font-size:2.0rem;
 }
 
 #shop {
     text-align:center;
-    font-size: 2.0rem;
 }
