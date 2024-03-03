@@ -83,17 +83,15 @@ body section {
 }
 
 body {
-  max-width: 100%;
-  overflow-x: hidden;
+  	padding: 10px;
 }
 
-<<<<<<< HEAD
 #accessories {
 	display: grid;
-	grid-template: repeat(3, 1fr) / repeat(4, 1fr)
-=======
+	grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+}
+
 #shoptitle {
     font-size:2.0rem;
     text-align:center;
->>>>>>> 576e95198421e4bf277956d87561ca4e9b4307b6
 }
