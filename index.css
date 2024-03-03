@@ -33,10 +33,6 @@ h1{
     cursor:pointer;
 }
 
-#addhabit{
-    color: #9BB6AF
-}
-
 .head {
 	display: grid;
 	grid-template: 1fr / repeat(3, 1fr);
@@ -52,12 +48,12 @@ h1{
 	background-color: #ede3e4ff;
 }
 
-.habits-list {
+/* .habits-list {
 	display:flex;
     flex-direction:row;
     justify-content: safe center;
     align-items: center;
-}
+} */
 
 .habits-nav div {
 	display:flex;
