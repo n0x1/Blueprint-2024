@@ -62,9 +62,16 @@ body section {
 
 .star-count {
     text-align: left;
-    position:fixed;
     margin-left:20%;
     text-align: right;
+}
+
+#description{
+    display: flex;
+    background-color: #ebdae6;
+    border-radius: 10px;
+    justify-content: center;
+    color: #697270
 }
 
 .your-pusheen {
