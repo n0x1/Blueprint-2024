@@ -5,13 +5,13 @@ const accessoriesPrice = {
 	"Plant": 5,
 	"Cake": 5,
 	"Camera": 5,
-	"Glasses": 10,
-	"PartyHat": 10,
-	"IceCream": 10,
+	"Glasses": 7,
+	"PartyHat": 7,
+	"IceCream": 7,
 	"BandAid": 2,
 	"Hat": 2,
-	"Butterfly": 7,
-	"Computer": 10,
+	"Butterfly": 3,
+	"Computer": 7,
 	"Pen": 3,
 	"Strawberry": 3
 }
@@ -45,7 +45,7 @@ const loadHabits = () => {
 
 	if (todayHabits.length === 0) {
 		const noHabits = document.createElement("p");
-		noHabits.innerHTML = "No habits yet...";
+		noHabits.innerHTML = "No tasks yet...";
 		noHabits.style['text-align'] = 'center';
 		todaySection.appendChild(noHabits);
 		return;
@@ -93,7 +93,7 @@ const updateStarCount = () => {
 const addHabit = () => {
 	// create an input
 	const inputBox = document.createElement("input");
-	inputBox.placeholder = "input habit here and press enter to submit"
+	inputBox.placeholder = "input task here and press enter to submit"
 	document.getElementById("today").appendChild(inputBox);
 	// check for enter and create new habit
 	inputBox.addEventListener("keyup", (event) => {
@@ -119,6 +119,8 @@ async function purchase(name) {
 		starCount -= accessoriesPrice[name];
 		updateStarCount();
 		myAccessories.push(name);
+		const cash = new Audio('cash.mp3');
+		cash.play();
 	} else {
 		const countEl = document.getElementById("star-count")
 		for (let i = 0; i < 3; i++) {
