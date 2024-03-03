@@ -74,4 +74,9 @@ const addHabit = () => {
 	inputBox.placeholder = "new habit..."
 	document.getElementById("today").appendChild(inputBox);
 	// check for enter and create new habit
+	inputBox.addEventListener("keyup", (event) => {
+		if (event.key == "Enter") {
+			text = inputBox.innerHTML;
+		}
+	})
 }
