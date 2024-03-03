@@ -27,11 +27,17 @@ h1{
     align-items: center;
 
 }
+#habits:hover{
+    cursor:pointer
+}
 #shop:hover{
     color: #111112 ;
     cursor:pointer;
-
 }
+#profile:hover{
+    cursor:pointer;
+}
+
 #addhabit{
     color: #9BB6AF
 }
