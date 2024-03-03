@@ -105,7 +105,7 @@ const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 async function purchase(name) {
 	console.log(accessoriesPrice[name]);
-	if (starCount > accessoriesPrice[name]) {
+	if (starCount >= accessoriesPrice[name]) {
 		starCount -= accessoriesPrice[name];
 		updateStarCount();
 		myAccessories.push(name);
@@ -122,8 +122,10 @@ async function purchase(name) {
 
 const loadProfile = () => {
 	const profileSection = document.getElementById("profile");
-	while (profileSection.firstChild) // clear the section
-		profileSection.removeChild(profileSection.lastChild);
+	profileSection.children[0].children[1].remove();
+	while (profileSection.children[1].firstChild) // clear the section
+		profileSection.children[1].removeChild(profileSection.children[1].lastChild);
+	
 
 	const cat = document.createElement("img");
 	cat.src = currentlyEmployed + "Cat.jpg";
