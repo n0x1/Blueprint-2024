@@ -27,11 +27,12 @@ h1{
     align-items: center;
 
 }
-.shop:hover{
+#shop:hover{
     background-color: #d5cce5 ;
+    cursor:pointer;
 
 }
-.addhabit{
+#addhabit{
     color: #9BB6AF
 }
 

@@ -8,9 +8,9 @@
 
 <head>
     <div class="head">
-        <div><a onclick="togglePage('habits')"><h1>habits</h1></a></div>
-        <div><a onclick="togglePage('shop')"><h1>shop</h1></a></div>
-        <div><a onclick="togglePage('profile')"><h1>profile</h1></a></div>
+        <div><a id="habits" onclick="togglePage('habits')"><h1>habits</h1></a></div>
+        <div><a id="shop" onclick="togglePage('shop')"><h1>shop</h1></a></div>
+        <div><a id="profile" onclick="togglePage('profile')"><h1>profile</h1></a></div>
     </div>
 </head>
 <body>
@@ -21,6 +21,7 @@
         </div>
 
         <div id="today">
+            <b><i>today</i></b>
             <div class="checkbox">
                 <input type="text" id="habit1" placeholder="your habit here"><input type="checkbox" id="check1" value="checked"><br>
                 <input type="text" id="habit2" placeholder="your habit here"><input type="checkbox" id="check2" value="checked"><br>
@@ -33,6 +34,7 @@
             </div>
         </div>
         <div id="this-week">
+            <b><i>this week</i></b>
             <div class="checkbox">
                 <input type="text" id="habit1" placeholder="your habit here"><input type="checkbox" id="check1" value="checked"><br>
                 <input type="text" id="habit2" placeholder="your habit here"><input type="checkbox" id="check2" value="checked"><br>
