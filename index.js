@@ -42,6 +42,9 @@ let thisWeekHabits = {
 const loadHabits = (id) => {
 	if (id === "today") {
 		const todaySection = document.getElementById("today");
+		while (todaySection.firstChild) // clear the section
+			todaySection.removeChild(todaySection.lastChild);
+
 		for (const [key, value] of Object.entries(todayHabits)) {
 			const wrapper = document.createElement("p");
 			wrapper.appendChild(document.createElement("span"))
@@ -64,7 +67,6 @@ const toggleHabit = (today, habit) => {
 		if (todayHabits[habitText]) { // if completed is true
 			habit.style['text-decoration'] = 'none';
 			todayHabits[habitText] = false;
-			console.log('hi');
 		} else {
 			habit.style['text-decoration'] = 'line-through'
 			todayHabits[habitText] = true;
