@@ -44,16 +44,16 @@ const loadHabits = (id) => {
 		const todaySection = document.getElementById("today");
 		for (const [key, value] of Object.entries(todayHabits)) {
 			console.log(key)
-			const habit = document.createElement("p");
-			habit.innerHTML = key;
-			todaySection.appendChild(habit);
-		}
-
-		for (let i = 0; i < todaySection.children.length; i++) {
-			console.log(i);
-			if (todayHabits[todaySection.children[i].textContent] === false) {
-				todaySection.children[i].style.setProperty("text-decoration", "line-through");
-			}
+			const wrapper = document.createElement("p");
+			wrapper.appendChild(document.createElement("span"))
+			const habit = wrapper.children[0];
+			habit.innerHTML = "&nbsp;" + key + "&nbsp;";
+			wrapper.style.color = "#4a6d7cff";
+			if (!value) habit.style['text-decoration'] = 'line-through';
+			habit.style.color = "black";
+			// set onclick ot previewStrikethrough
+			wrapper.classList.add("habit")
+			todaySection.appendChild(wrapper);
 		}
 	}
 }

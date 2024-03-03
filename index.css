@@ -51,6 +51,7 @@ h1{
 	width: 100%;
 	text-align: center;
 	margin: auto;
+	padding: 5px;
 }
 
 .habits-nav div {
@@ -66,4 +67,8 @@ h1{
 .habits-nav div a:hover {
 	color: #111112 ;
     cursor:pointer;
+}
+
+.habit:hover {
+	text-decoration: line-through;
 }
