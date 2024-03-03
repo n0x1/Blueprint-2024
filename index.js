@@ -28,7 +28,6 @@ let todayHabits = { // where the value is whether or not the habit is completed
 };
 
 const loadHabits = () => {
-	console.log('hi')
 	const todaySection = document.getElementById("today");
 	while (todaySection.firstChild) // clear the section
 		todaySection.removeChild(todaySection.lastChild);
@@ -56,5 +55,7 @@ const toggleHabit = (habit) => {
 	} else {
 		habit.style['text-decoration'] = 'line-through'
 		todayHabits[habitText] = true;
+		const audio = new Audio('bell.wav');
+		audio.play();
 	}
 }
