@@ -60,9 +60,10 @@ body section {
 #description{
     display: flex;
     background-color: rgb(248, 239, 240);
+    font-size: 1.2rem;
     align-content:stretch;
     justify-content: center;
-    color: #697270
+    color: #697270  
 }
 
 #habits {
