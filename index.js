@@ -101,6 +101,7 @@ const addHabit = () => {
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 async function purchase(name) {
+	console.log(accessoriesPrice[name]);
 	if (starCount > accessoriesPrice[name]) {
 		starCount -= accessoriesPrice[name];
 		updateStarCount();
