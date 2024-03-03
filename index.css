@@ -92,6 +92,10 @@ body {
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
+#accessories img {
+	border: solid red 1px;
+}
+
 #shoptitle {
     font-size:2.0rem;
     text-align:center;
