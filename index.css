@@ -60,12 +60,12 @@ body section {
 	text-decoration: line-through;
 }
 
-.star-count {
+#star-count {
     text-align: left;
 }
 
 #description{
-    display: flex;
+    /* display: flex; */
     background-color: #ebdae6;
     border-radius: 10px;
     justify-content: center;
@@ -79,11 +79,4 @@ body section {
 
 #habits {
     justify-content: center;
-}
-
-#description {
-    margin-top:-20px;
-}
-#description {
-    margin-top:-20px;
 }
