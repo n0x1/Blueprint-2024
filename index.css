@@ -11,8 +11,9 @@ h1{
     font-family: "Concert One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    border-radius: 10px;
+    border-collapse:collapse;
     justify-content: center;
+    background-color:#ede3e4ff;
 }
 .addhabit{
     color: #9BB6AF
@@ -21,4 +22,8 @@ h1{
 .navbar {
 	display: grid;
 	grid-template: 1fr / repeat(3, 1fr);
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    width:100%;
 }
