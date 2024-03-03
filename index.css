@@ -123,5 +123,5 @@ input {
 
 #addhabitlabel:hover() {
     color: #111112;
-
+    cursor:pointer;
 }
