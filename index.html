@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <div class="head">
         <div><a onclick="togglePage('habits')"><h1>habits</h1></a></div>
@@ -15,17 +15,18 @@
     </div>
 </head>
 
-<div class="star-count">
-    <p> stars: ${starcount}:</p>
-</div>
-<br>
-<div id="description" >
-    <i>Earn stars by completing tasks and use these stars to purchase accessories for your Pusheen!</i>
-</div>
+<body onload="updateStarCount()">
+    <div id="star-count">
+        <p></p>
+    </div>
+    <br>
 
-<body>
     <section id="starting">
         <!--starcount is always visisble-->
+        <!--insert pusheen image here-->
+        <div id="description" >
+            <i>Earn stars by completing tasks and use these stars to purchase accessories for your Pusheen!</i>
+        </div>
     </section>
     <section id="habits">
         <p>my habits:</p>
@@ -34,7 +35,8 @@
     </section>
     <section id="shop">
         <div class="shop">
-            shop!
+            shop!<br>
+            purchase accessories for your Pusheen here:
         </div>
     </section>
     <section id="profile">
@@ -42,6 +44,16 @@
             your pusheen!
         </div>
     </section>
+    <div class="star-count">
+        <p> stars: ${starcount}:</p>
+    </div>
+    <br>
+    <div id="description" >
+        <i>Earn stars by completing tasks and use these stars to purchase accessories for your Pusheen!</i>
+    </div>
+    <!--div id="accessrorieslabel">
+        Purchase accessories for your Pusheen here:
+    </div-->
 </body>
 
 </html>

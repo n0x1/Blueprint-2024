@@ -68,3 +68,9 @@ const toggleHabit = (habit) => {
 		audio.play();
 	}
 }
+
+const starCount = 0;
+const updateStarCount = () => {
+	console.log('hi')
+	document.getElementById("star-count").children[0].innerHTML = "your stars: " + starCount;
+}
