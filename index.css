@@ -35,7 +35,7 @@ h1{
     color: #9BB6AF
 }
 
-.navbar {
+.head {
 	display: grid;
 	grid-template: 1fr / repeat(3, 1fr);
     /* overflow: hidden;
