@@ -138,3 +138,7 @@ const loadProfile = () => {
 		document.getElementById("my-accessories").appendChild(accessoryEl);
 	}
 }
+
+const petMovement = () => {
+	HTMLImageElement.pusheen.classList.add("animate__animated animate__bounce animate__repeat-2")
+}
