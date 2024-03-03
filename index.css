@@ -21,8 +21,8 @@ h1{
 .navbar {
 	display: grid;
 	grid-template: 1fr / repeat(3, 1fr);
-    overflow: hidden;
+    /* overflow: hidden;
     position:fixed;
     top: 0;
-    width:100%;
+    width:100%; */
 }
